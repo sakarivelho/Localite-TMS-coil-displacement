@@ -1,4 +1,4 @@
-# Localite TMS Coil Displacement Calculator
+# Localite TMS Coil Displacement
 
 Simple Matlab code to calculate both the **translational displacement** and **angular displacement** of a TMS coil relative to a specified instrument marker created in Localite TMS navigator software.
 
