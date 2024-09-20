@@ -26,10 +26,10 @@ fprintf("Available instrument markers descriptions: \n\n");
 arrayfun(@(x) fprintf('%s \n', x.Description),instrumentMarkers)
 fprintf("\n........................\n");
 %% 
-% Description of the instrument marker of interest (not case sensitive)
+% Description of the instrument marker of interest 
 description = 'hotspot';
 
-% Find instrument marker with the description
+% Find instrument marker with the description (not case sensitive)
 hotspotInd = find(strcmpi({instrumentMarkers.Description},description));
 assert(length(hotspotInd) == 1,'Zero or more than one instrument markers found');
 
