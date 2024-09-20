@@ -221,7 +221,7 @@ classdef CoilDisplacementUI < handle
             end
 
             % find instrument marker with the selected description
-            hotspotInd = find(arrayfun(@(x) strcmpi(x.Description, description), obj.instrumentMarkers));
+            hotspotInd = find(strcmpi({obj.instrumentMarkers.Description},description));
             if length(hotspotInd) ~= 1
                 uialert(obj.fig, 'Zero or multiple instrument markers with the selected description found', 'Input error');
                 return;

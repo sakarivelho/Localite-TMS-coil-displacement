@@ -30,7 +30,7 @@ fprintf("\n........................\n");
 description = 'hotspot';
 
 % Find instrument marker with the description
-hotspotInd = find(arrayfun(@(x) strcmpi(x.Description,description),instrumentMarkers));
+hotspotInd = find(strcmpi({instrumentMarkers.Description},description));
 assert(length(hotspotInd) == 1,'Zero or more than one instrument markers found');
 
 % 3x4 transformation matrix for the instrument marker of interest
