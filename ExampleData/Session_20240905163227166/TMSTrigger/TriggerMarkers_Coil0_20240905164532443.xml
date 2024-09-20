@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TriggerMarkerList coordinateSpace="MNI" isOnlineReading="true" startTime="16:45:32.409">
+    <!--All positions are saved in the MNI coordinate system converted from coordinates of individual patient.-->
+    <ResponseParameters selectedResponseChannel="0">
+        <responseDescription id="mepMax" maxValue="51200.0"
+            minValue="-51200.0" name="MEP Max" unit="uV"/>
+        <responseDescription id="mepMin" maxValue="51200.0"
+            minValue="-51200.0" name="MEP Min" unit="uV"/>
+        <responseDescription id="mepMaxTime" maxValue="100000.0"
+            minValue="0.0" name="MaxTime" unit="uS"/>
+        <responseDescription id="mepAmplitude" maxValue="51200.0"
+            minValue="-51200.0" name="MEP Amplitude" unit="uV"/>
+        <responseDescription id="valueA" maxValue="200.0" minValue="0.0"
+            name="Value A (di/dt)" unit="A/us"/>
+        <responseDescription id="amplitudeA" maxValue="100.0"
+            minValue="0.0" name="Amplitude A" unit="%"/>
+    </ResponseParameters>
+</TriggerMarkerList>

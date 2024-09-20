@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TriggerMarkerList coordinateSpace="MNI" isOnlineReading="true" startTime="12:01:29.614">
+    <!--All positions are saved in the MNI coordinate system converted from coordinates of individual patient.-->
+    <ResponseParameters selectedResponseChannel="0">
+        <responseDescription id="mepMax" maxValue="51200.0"
+            minValue="-51200.0" name="MEP Max" unit="uV"/>
+        <responseDescription id="mepMin" maxValue="51200.0"
+            minValue="-51200.0" name="MEP Min" unit="uV"/>
+        <responseDescription id="mepMaxTime" maxValue="100000.0"
+            minValue="0.0" name="MaxTime" unit="uS"/>
+        <responseDescription id="mepAmplitude" maxValue="51200.0"
+            minValue="-51200.0" name="MEP Amplitude" unit="uV"/>
+        <responseDescription id="valueA" maxValue="200.0" minValue="0.0"
+            name="Value A (di/dt)" unit="A/us"/>
+        <responseDescription id="amplitudeA" maxValue="100.0"
+            minValue="0.0" name="Amplitude A" unit="%"/>
+    </ResponseParameters>
+    <TriggerMarker color="#ffafaf" description="" recordingTime="28482"
+        selected="false" set="true" visibility="true">
+        <ResponseValues>
+            <Value key="valueA" response="NaN"/>
+            <Value key="mepMaxTime" response="NaN"/>
+            <Value key="mepAmplitude" response="NaN"/>
+            <Value key="mepMin" response="NaN"/>
+            <Value key="mepMax" response="NaN"/>
+            <Value key="amplitudeA" response="0.0"/>
+        </ResponseValues>
+        <Matrix4D data00="0.3870810263369356"
+            data01="-0.3629373808799554" data02="-0.8476642669721535"
+            data03="-44.89501102285423" data10="-0.22091584142487924"
+            data11="-0.929050219772921" data12="0.29690377740762813"
+            data13="-2.398821778183475" data20="-0.8952398801153673"
+            data21="0.07233339195267717" data22="-0.43977654593115667"
+            data23="91.48795655335744" data30="0.0" data31="0.0"
+            data32="0.0" data33="1.0"/>
+    </TriggerMarker>
+    <TriggerMarker color="#ffafaf" description="" recordingTime="30307"
+        selected="false" set="true" visibility="true">
+        <ResponseValues>
+            <Value key="valueA" response="NaN"/>
+            <Value key="mepMaxTime" response="NaN"/>
+            <Value key="mepAmplitude" response="NaN"/>
+            <Value key="mepMin" response="NaN"/>
+            <Value key="mepMax" response="NaN"/>
+            <Value key="amplitudeA" response="0.0"/>
+        </ResponseValues>
+        <Matrix4D data00="0.3887841046930852" data01="-0.36861674634235"
+            data02="-0.8443894818009171" data03="-44.97749035933947"
+            data10="-0.22404489989607795" data11="-0.9268034525959438"
+            data12="0.30143693504419566" data13="-2.426198516328988"
+            data20="-0.8936866259996268" data21="0.07198636880869683"
+            data22="-0.4429076200938354" data23="91.44447636974559"
+            data30="0.0" data31="0.0" data32="0.0" data33="1.0"/>
+    </TriggerMarker>
+    <TriggerMarker color="#ffafaf" description="" recordingTime="31840"
+        selected="false" set="true" visibility="true">
+        <ResponseValues>
+            <Value key="valueA" response="NaN"/>
+            <Value key="mepMaxTime" response="NaN"/>
+            <Value key="mepAmplitude" response="NaN"/>
+            <Value key="mepMin" response="NaN"/>
+            <Value key="mepMax" response="NaN"/>
+            <Value key="amplitudeA" response="0.0"/>
+        </ResponseValues>
+        <Matrix4D data00="0.39207802223099253"
+            data01="-0.37363534409883437" data02="-0.840646586324428"
+            data03="-44.894035367282505" data10="-0.22823224887474583"
+            data11="-0.924750358723772" data12="0.3045686188515901"
+            data13="-2.529230913109501" data20="-0.8911790471237212"
+            data21="0.07244744754465067" data22="-0.44784651643979057"
+            data23="91.34733367675295" data30="0.0" data31="0.0"
+            data32="0.0" data33="1.0"/>
+    </TriggerMarker>
+    <TriggerMarker color="#ffafaf" description="" recordingTime="62213"
+        selected="false" set="true" visibility="true">
+        <ResponseValues>
+            <Value key="valueA" response="NaN"/>
+            <Value key="mepMaxTime" response="NaN"/>
+            <Value key="mepAmplitude" response="NaN"/>
+            <Value key="mepMin" response="NaN"/>
+            <Value key="mepMax" response="NaN"/>
+            <Value key="amplitudeA" response="0.0"/>
+        </ResponseValues>
+        <Matrix4D data00="0.4816387100039051"
+            data01="-0.3307558582794911" data02="-0.8115955304893747"
+            data03="-53.89067997226845" data10="-0.20024988569850635"
+            data11="-0.9431136653015664" data12="0.2655168308599988"
+            data13="4.447225096620478" data20="-0.8532213816907471"
+            data21="0.03463764434830102" data22="-0.5204575845258589"
+            data23="85.39348737597027" data30="0.0" data31="0.0"
+            data32="0.0" data33="1.0"/>
+    </TriggerMarker>
+    <TriggerMarker color="#ffafaf" description="" recordingTime="63265"
+        selected="false" set="true" visibility="true">
+        <ResponseValues>
+            <Value key="valueA" response="NaN"/>
+            <Value key="mepMaxTime" response="NaN"/>
+            <Value key="mepAmplitude" response="NaN"/>
+            <Value key="mepMin" response="NaN"/>
+            <Value key="mepMax" response="NaN"/>
+            <Value key="amplitudeA" response="0.0"/>
+        </ResponseValues>
+        <Matrix4D data00="0.4897506126851554"
+            data01="-0.34317293869833515" data02="-0.8014962341765706"
+            data03="-55.4384305294484" data10="-0.21093550026197938"
+            data11="-0.9386166121182318" data12="0.27299196336976556"
+            data13="4.806970290267863" data20="-0.8459728683493949"
+            data21="0.03536568224139765" data22="-0.5320702175614198"
+            data23="84.247300189041" data30="0.0" data31="0.0"
+            data32="0.0" data33="1.0"/>
+    </TriggerMarker>
+    <TriggerMarker color="#ffafaf" description="" recordingTime="64369"
+        selected="false" set="true" visibility="true">
+        <ResponseValues>
+            <Value key="valueA" response="NaN"/>
+            <Value key="mepMaxTime" response="NaN"/>
+            <Value key="mepAmplitude" response="NaN"/>
+            <Value key="mepMin" response="NaN"/>
+            <Value key="mepMax" response="NaN"/>
+            <Value key="amplitudeA" response="0.0"/>
+        </ResponseValues>
+        <Matrix4D data00="0.49032311433668685"
+            data01="-0.34606147305967505" data02="-0.7999124955135932"
+            data03="-54.6740999512052" data10="-0.20852015198440388"
+            data11="-0.9377330931336549" data12="0.2778692000316532"
+            data13="6.656897411085254" data20="-0.8462493071379245"
+            data21="0.030551644368153674" data22="-0.5319436128602624"
+            data23="84.52789202568073" data30="0.0" data31="0.0"
+            data32="0.0" data33="1.0"/>
+    </TriggerMarker>
+    <TriggerMarker color="#ffafaf" description="" recordingTime="65273"
+        selected="false" set="true" visibility="true">
+        <ResponseValues>
+            <Value key="valueA" response="NaN"/>
+            <Value key="mepMaxTime" response="NaN"/>
+            <Value key="mepAmplitude" response="NaN"/>
+            <Value key="mepMin" response="NaN"/>
+            <Value key="mepMax" response="NaN"/>
+            <Value key="amplitudeA" response="0.0"/>
+        </ResponseValues>
+        <Matrix4D data00="0.48869171123612176"
+            data01="-0.3522090862653366" data02="-0.7981929071641106"
+            data03="-54.70012332379394" data10="-0.21403081843802332"
+            data11="-0.9353236544327244" data12="0.2816792792223262"
+            data13="6.48702350329409" data20="-0.8457860049999104"
+            data21="0.033183838484965755" data22="-0.5324731098708583"
+            data23="84.23484753288398" data30="0.0" data31="0.0"
+            data32="0.0" data33="1.0"/>
+    </TriggerMarker>
+</TriggerMarkerList>

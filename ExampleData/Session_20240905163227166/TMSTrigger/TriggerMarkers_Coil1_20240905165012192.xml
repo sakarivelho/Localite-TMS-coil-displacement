@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TriggerMarkerList coordinateSpace="MNI" isOnlineReading="false" startTime="16:50:12.172">
+    <!--All positions are saved in the MNI coordinate system converted from coordinates of individual patient.-->
+    <ResponseParameters selectedResponseChannel="0">
+        <responseDescription id="response" maxValue="51200.0"
+            minValue="-51200.0" name="Response" unit="uV"/>
+        <responseDescription id="amplitude" maxValue="100.0"
+            minValue="0.0" name="Amplitude" unit="%"/>
+    </ResponseParameters>
+</TriggerMarkerList>

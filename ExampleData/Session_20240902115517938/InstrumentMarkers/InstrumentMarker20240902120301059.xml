@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InstrumentMarkerList coordinateSpace="MNI">
+    <!--All positions are saved in the MNI coordinate system converted from coordinates of individual patient.-->
+    <InstrumentMarker alwaysVisible="false" index="0" selected="true">
+        <Marker additionalInformation="" color="#ff0000" description="" set="false">
+            <Matrix4D data00="1.0" data01="0.0" data02="0.0"
+                data03="-13.139858894285291" data10="0.0" data11="1.0"
+                data12="0.0" data13="-3.8547100106823606" data20="0.0"
+                data21="0.0" data22="1.0" data23="70.27038392180769"
+                data30="0.0" data31="0.0" data32="0.0" data33="1.0"/>
+        </Marker>
+    </InstrumentMarker>
+    <InstrumentMarker alwaysVisible="true" index="1" selected="false">
+        <Marker
+            additionalInformation=" valueA: NaN, mepMaxTime: NaN, mepAmplitude: NaN, mepMin: NaN, mepMax: NaN, amplitudeA: 0.0,"
+            color="#ffafaf" description="MEP Max: NaN uV, 65.273 s" set="true">
+            <Matrix4D data00="0.48869171123612176"
+                data01="-0.3522090862653366"
+                data02="-0.7981929071641106" data03="-54.70012332379394"
+                data10="-0.21403081843802332"
+                data11="-0.9353236544327244" data12="0.2816792792223262"
+                data13="6.48702350329409" data20="-0.8457860049999104"
+                data21="0.033183838484965755"
+                data22="-0.5324731098708583" data23="84.23484753288398"
+                data30="0.0" data31="0.0" data32="0.0" data33="1.0"/>
+        </Marker>
+    </InstrumentMarker>
+</InstrumentMarkerList>
