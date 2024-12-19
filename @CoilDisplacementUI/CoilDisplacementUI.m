@@ -139,10 +139,10 @@ classdef CoilDisplacementUI < handle
                 [file, path] = uigetfile('*.xml', 'Choose TriggerMarker file');
             elseif ~isempty(obj.instrumentFilePath)
                 prevPath = fileparts(obj.instrumentFilePath);
-                [file, path] = uigetfile([prevPath ,'\..\*.xml'], 'Choose TriggerMarker file');
+                [file, path] = uigetfile([prevPath ,'\..\*.xml'], 'Choose InstrumentMarker file');
             else
                 prevPath = fileparts(obj.triggerFilePath);
-                [file, path] = uigetfile([prevPath ,'\..\*.xml'], 'Choose TriggerMarker file');
+                [file, path] = uigetfile([prevPath ,'\..\*.xml'], 'Choose InstrumentMarker file');
             end
             % Restore fig to top
             figure(obj.fig);
