@@ -136,7 +136,7 @@ classdef CoilDisplacementUI < handle
             % Check if file is already selected and choose folder
             % accordingly
             if isempty(obj.instrumentFilePath) & isempty(obj.triggerFilePath)
-                [file, path] = uigetfile('*.xml', 'Choose TriggerMarker file');
+                [file, path] = uigetfile('*.xml', 'Choose InstrumentMarker file');
             elseif ~isempty(obj.instrumentFilePath)
                 prevPath = fileparts(obj.instrumentFilePath);
                 [file, path] = uigetfile([prevPath ,'\..\*.xml'], 'Choose InstrumentMarker file');
