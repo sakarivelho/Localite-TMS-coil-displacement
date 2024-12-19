@@ -3,30 +3,39 @@ clear;
 % Add functions and quaternion library to path
 addpath(genpath("Functions\"));
 
-% Set manual to 1 for manual data selection, 0 to use example data
-manual = 1;
-%% Choose data manually
-if manual
-    [f,p] = uigetfile('*.xml','Choose InstrumentMarker file')
-    instrumentFilePath = fullfile(p,f);
-    [f,p] = uigetfile([p '\..\*.xml'],'Choose TriggerMarker file')
-    triggerFilePath = fullfile(p,f);
-else
-    instrumentFilePath = 'ExampleData\Session_20240902115517938\InstrumentMarkers\InstrumentMarker20240902120310221.xml';
-    triggerFilePath = 'ExampleData\Session_20240902115517938\TMSTrigger\TriggerMarkers_Coil0_20240902120533402.xml';
-end
 
-%%
-% Read the instrument marker transformation matrices
+%% First we need the specify the triggerMarker and instrumentMarker files we want to use!
+
+%% Option 1: Speficy file locations
+instrumentFilePath = 'ExampleData\Session_20240902115517938\InstrumentMarkers\InstrumentMarker20240902120310221.xml';
+triggerFilePath = 'ExampleData\Session_20240902115517938\TMSTrigger\TriggerMarkers_Coil0_20240902120533402.xml';
+
+%% Option 2: Choose files with uigetfile
+[f,p] = uigetfile('*.xml','Choose InstrumentMarker file')
+instrumentFilePath = fullfile(p,f);
+[f,p] = uigetfile([p '\..\*.xml'],'Choose TriggerMarker file')
+triggerFilePath = fullfile(p,f);
+
+%% Option 3: use getLastMarkersFromSession-function
+% Optionally, you can get instrumentFilePath and triggerFilePath with
+% getLastMarkersFromSession function. It returns paths for last modified 
+% InstrumentMarker and TriggerMarkers file of a given session, which are in
+% most cases the files you want to use.
+coilNumber = 1; %Specify the coil you want get the markers from (1 or 2)
+sessionPath = uigetdir(pwd,"Choose session folder") %Path for the session data
+[triggerFilePath,instrumentFilePath] = getLastMarkersFromSession(sessionPath,coilNumber)
+
+
+%% Read the instrument marker transformation matrices
 instrumentMarkers = readInstrumentMarkerTransformationMatrices(instrumentFilePath);
-
 % Print available descriptions
 fprintf("\n........................\n");
 fprintf("Available instrument markers descriptions: \n\n");
 arrayfun(@(x) fprintf('%s \n', x.Description),instrumentMarkers)
 fprintf("\n........................\n");
-%% 
-% Description of the instrument marker of interest 
+
+
+%% Specify the description for the instrument marker of interest 
 description = 'hotspot';
 
 % Find instrument marker with the description (not case sensitive)
@@ -39,8 +48,8 @@ instrumentMatrix = instrumentMarkers(hotspotInd).Matrix4D;
 % Read all triggerMarker transformation matrices of the .xml file
 triggers = readTriggerMarkerTransformationMatrices(triggerFilePath);
 
-% Get translation, yaw, pitch, and roll for each triggerMarkers (relative
-% to the instrument marker)
+%% Get translation, yaw, pitch, and roll for each triggerMarkers
+%  (relative to the instrument marker)
 for i  = 1:length(triggers)
     % If the camera did not see the coil, the rotation matrix will equal
     % eye(3). Set values to NaN for these triggers.
