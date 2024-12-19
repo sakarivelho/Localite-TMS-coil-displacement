@@ -62,7 +62,7 @@ for i = 1:numel(dInstMark)
 end
 % Get index for latest datetime.
 [~,maxInd] = max(dates);
-instrumentPath = fullfile(sessionPath,"InstrumentMarker",dInstMark(maxInd).name);
+instrumentPath = fullfile(sessionPath,"InstrumentMarkers",dInstMark(maxInd).name);
 
 
 end
