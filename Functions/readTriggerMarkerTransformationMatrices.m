@@ -5,9 +5,10 @@ function trigger = readTriggerMarkerTransformationMatrices(filepath)
     % Session TMSTrigger-folder)
 
     % Output:
-    %  trigger: Struct with 3x4 transformation matrix ('Matrix4D') for each trigger found from the data.
-    %   Columns 1-3 contain the rotation matrix and column 4 the translational components
-
+    %  trigger: Struct with fields:
+    %   'Matrix4D'  = 3x4 transformation matrix ('Matrix4D') for each trigger found from the data.
+    %       Columns 1-3 contain the rotation matrix and column 4 the translational components
+    %   'recordingTime' = recordingTime for the trigger
     % Todo: add some metadata to the struct?
     
 
@@ -19,6 +20,7 @@ function trigger = readTriggerMarkerTransformationMatrices(filepath)
     triggerMarkers = data.TriggerMarker;
     trigger = struct();
     for i = 1:length(triggerMarkers)
+        recordingTime = triggerMarkers(i).recordingTimeAttribute;
         curMat = triggerMarkers(i).Matrix4D;
         matField = fieldnames(curMat);
         % Check field size!
@@ -31,8 +33,10 @@ function trigger = readTriggerMarkerTransformationMatrices(filepath)
         transformationMatrix = reshape(outMat,[4,3])';
          if isempty(fieldnames(trigger))
             trigger(1).Matrix4D = transformationMatrix;
+            trigger(1).recordingTime = recordingTime;
         else
             trigger(end+1).Matrix4D = transformationMatrix;
+            trigger(end).recordingTime = recordingTime;
         end
     end
  
