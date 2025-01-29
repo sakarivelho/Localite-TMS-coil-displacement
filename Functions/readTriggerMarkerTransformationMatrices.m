@@ -6,11 +6,9 @@ function trigger = readTriggerMarkerTransformationMatrices(filepath)
 
     % Output:
     %  trigger: Struct with fields:
-    %   'Matrix4D'  = 3x4 transformation matrix ('Matrix4D') for each trigger found from the data.
+    %   Matrix4D = 3x4 transformation matrix  for each trigger found from the data.
     %       Columns 1-3 contain the rotation matrix and column 4 the translational components
-    %   'recordingTime' = recordingTime for the trigger
-    % Todo: add some metadata to the struct?
-    
+    %   recordingTime'= recordingTime for the trigger
 
     % readstruct seems to work with .xml files. Much better than readXML
     data = readstruct(filepath);
